@@ -5,7 +5,9 @@ import PlanksBlock from "@/app/components/box";
 
 export default function Home() {
   return (
-    // <SpinningText></SpinningText>
-      <PlanksBlock></PlanksBlock>
+      <>
+    {/*<SpinningText></SpinningText>*/}
+    <PlanksBlock></PlanksBlock>
+      </>
   );
 }

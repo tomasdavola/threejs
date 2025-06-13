@@ -32,6 +32,9 @@ export default function PlanksBlock() {
         const planksTexture = loader.load("/textures/wood_planks.jpg")
         const onTexture = loader.load("/textures/on_lamp.webp")
         const offTexture = loader.load("/textures/off_lamp.webp")
+        planksTexture.magFilter = THREE.NearestFilter;
+        onTexture.magFilter = THREE.NearestFilter;
+        offTexture.magFilter = THREE.NearestFilter;
 
         const block = new THREE.BoxGeometry(2,2,2);
 
